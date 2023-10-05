@@ -166,16 +166,7 @@ btnDireccion.forEach((el,index1) =>{
                                         </a>
                                     </div>
                                 </li>
-                                <li class="footer_info_item footer_project">
-                                    <h5 class="contact_item1">Otros Proyectos</h5>
-                                    <h5 class="contact_item2">Other Projects</h5>
-                                    <ul class="contact_item3">
-                                        <li class="other_project_item">aaaaaaaaaa</li>
-                                        <li class="other_project_item">bbbbbbbbbb</li>
-                                        <li class="other_project_item">ccccccccccccccc</li>
-                                        <li class="other_project_item">dddddddddddd</li>
-                                    </ul>
-                                </li>
+                                
                             </ul>
                         </footer>
         
