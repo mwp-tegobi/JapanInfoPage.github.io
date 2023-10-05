@@ -1,0 +1,1191 @@
+*{
+	margin: 0;
+	padding: 0;
+	/* background-color: rgb(140, 140, 140); */
+	font-family:  proximanova,Helvetica, Arial,sans-serif;
+	user-select: none;
+}
+@font-face {
+	font-family: HIROMISAKE;
+	src: url(fonts/HIROMISAKE.ttf);
+	font-family: proximanova;
+	src: url(fonts/Proxima\ Nova\ Regular.otf);
+}
+
+
+body{
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.menu-header{
+	position: absolute;
+	box-sizing: content-box;
+	z-index: 40;
+	height: 70px;
+	display: flex;
+}
+.menu_icon{
+	padding: 5px 12px 10px 10px;
+	width: 60px;
+	height: 60px;
+	background-color: #313131;
+	border-radius: 0 0 14px 0;
+}
+.menu_icon img {
+	width: 60px;
+	height: 60px;
+}
+.menu_infos_otros{
+	position: absolute;
+	left: -478px;
+	z-index: -10;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 600px;
+	height: 60px;
+	background-color: #404040;
+	border-radius: 0 0 14px 0;
+	transition: 1.2s;
+}
+.menu_infos_otros:hover{
+	transition: 1.2s;
+	left: 0px;
+}
+
+
+.menu_estudias{
+	text-align: center;
+	font-size: 16px;
+	padding: 12px;
+	border-radius: 10px;
+	margin-left: 6px;
+	background-color: #313131;
+	color: #fff;
+	transition: .3s;
+	cursor: pointer;
+}
+.menu_estudias:hover{
+	color: #000;
+	background-color: #e4e4e4;
+	transition: .3s;
+
+}
+
+.img_cerezos_container, .img_estudiar_container{
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	z-index: 2500;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .4);
+}
+
+
+.close_cerezos, .close_estudiar{
+	width: 750px;
+	height: 40px;
+	cursor: pointer;
+}
+.close_estudiar_item{
+	width: 200px;
+	height: 40px;
+	border-radius: 10px 10px 0 0;
+	background-color: #c4c4c4;
+}
+.close_cerezos img{
+	position: relative;
+	margin-left: 650px;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+}
+.close_estudiar img{
+	margin-top: 5px;
+	margin-left: 6px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.elementos_estudiar img{
+	border-radius: 10px;
+	margin: auto;
+	width: 86%;
+}
+.elementos_estudiar{
+	width: 750px;
+	height: 500px;
+	background-color: #e2e2e2;
+	border-radius: 0 10px 0 0;
+}
+.elementos_estudiar_container{
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-direction: column;
+	width: 94%;
+	height: 94%;
+	margin: 3%;
+	background-color: #ececec;
+	border-radius: 10px;
+}
+.elementos_estudiar_items{
+	display: inline;
+	box-sizing: border-box;
+	font-size: 16px;
+	list-style: none;
+	min-width: 100px;
+	height: 40px;
+	margin: 6px;
+	padding: 12px 0 0 20px;
+	border-radius: 50px;
+	background-color: #313131;
+	color: #fff;
+}
+.elementos_estudiar_items h3{
+	margin-right: 100px;
+	display: inline;
+}
+.elementos_estudiar_items a{
+	color: #e2e2e2;
+	text-decoration: none;
+}
+.text_cerezos{
+	color: #fff;
+	margin-top: 4px;
+	width: 650px;
+	height: 30px;
+	background-color: rgba(0, 0, 0, .4);
+	text-align: center;
+}
+.text_estudiar{
+	width: 750px;
+	height: 30px;
+	font-size: 14px;
+	background-color: #c4c4c4;
+	border-radius: 0 0 8px 8px;
+	padding-top: 10px;
+	text-align: center;
+}
+.text_cerezos a{
+	color: #fff;
+}
+
+
+
+.donde_direccion{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	z-index: 1000;
+	top: 21%;
+	left: -190px;
+	transition: .8s;
+	cursor: pointer;
+}
+
+
+
+.donde_direccion_hover:hover{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	z-index: 1000;
+	top: 21%;
+	left: -40px;
+}
+
+.items_direccion_container{
+	background-color: #313131;
+	list-style: none;
+	border-radius: 0 8px 8px 0;
+}
+.items_direccion{
+	width: 80px;
+	padding: 12px 12px 6px 12px;
+	margin: 12px 34px 12px 12px;
+	color: #fff;
+	background-color: #313131;
+	border-bottom: 1px solid #fff;
+}
+.items_direccion:hover{
+	color: #b8b8b8;
+	border-bottom: 1px solid #b8b8b8;
+}
+.btn_direccion{
+	position: relative;
+	left: 190px;
+	box-sizing: border-box;
+	width: 40px;
+	text-align: center;
+	background-color: #313131;
+	border-radius: 0 10px 10px 0;
+}
+
+.fa-angle-right{
+	color: #fff;
+	padding-top: 15px;
+	font-size: 30px;
+}
+.btn_direccion1{
+	position: relative;
+	left: 0;
+	box-sizing: border-box;
+	width: 40px;
+	height: 60px;
+	margin-left: 12px;
+	text-align: center;
+	background-color: #313131;
+	border-radius: 0 0px 14px 0;
+}
+.btn_direccion1:hover, .btn_direccion1:hover i{
+	color: #313131;
+	background-color: #fff;
+}
+.btn_direccion_regiones{
+	font-size: 16px;
+	padding: 8px 4px 8px 4px;
+	color: #fff;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+.container_inicio_jpn{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 2500;
+	display: flex;
+}
+.inicio_jpn_item:nth-child(2){
+	width: 50vw;
+	height: 100vh;
+	background-image: url(images/jpn_map/fondo_left.png);
+	background-size: cover;
+	background-position: right;
+	/* box-shadow: 2px 0 40px 2px #202020; */
+}
+.inicio_jpn_item:last-child{
+	width: 50vw;
+	height: 100vh;
+	background-image: url(images/jpn_map/fondo_right.png);
+	background-size: cover;
+}
+.inicio_item_animation_display{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	background-image: url(images/jpn_map/fondo_1.png);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+}
+
+.inicio_item_jpn_map{
+	margin: 50px;
+	width: calc(40% - 100px);
+	min-width: 200px;
+	height: calc(100% - 100px);
+	background-image: url(images/jpn_map/fondo_jpn_map.png);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	filter: drop-shadow(0 0 6px #202020);
+	position: relative;
+}
+.items_inicio_map{
+	list-style: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#hokkaido_inicio_map{background-image: url(images/MAP/mapa_inicio/hokkaido_inicio.png);}
+#touhoku_inicio_map{background-image: url(images/MAP/mapa_inicio/touhoku_inicio.png);}
+#kanto_inicio_map{background-image: url(images/MAP/mapa_inicio/kanto_inicio.png);}
+#chuubu_inicio_map{background-image: url(images/MAP/mapa_inicio/chuubu_inicio.png);}
+#kansai_inicio_map{background-image: url(images/MAP/mapa_inicio/kansai_inicio.png);}
+#chuugoku_inicio_map{background-image: url(images/MAP/mapa_inicio/chuugoku_inicio.png);}
+#shikoku_inicio_map{background-image: url(images/MAP/mapa_inicio/shikoku_inicio.png);}
+#kyuushuu_inicio_map{background-image: url(images/MAP/mapa_inicio/kyuushuu_inicio.png);}
+#okinawa_inicio_map{background-image: url(images/MAP/mapa_inicio/okinawa_inicio.png);}
+
+
+
+.inicio_item_jpn_infos{
+	margin: 50px;
+	width: calc(60% - 100px);
+	height: calc(100% - 100px);
+	display: flex;
+	flex-direction: column;
+}
+.inicio_infos_direccion{
+	position: relative;
+	width: 100%;
+	height: 20%;
+	border-bottom: 2px solid #313131;
+	font-size: 50px;
+	transform-style: preserve-3d;
+	transform: translateZ(-50px);
+}
+.inicio_infos_direccion_p{
+	box-sizing: border-box;
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 70px;
+	text-align: center;
+	border-radius: 10px;
+	/* box-shadow: 0 0 4px 2px #606060; */
+	/* background-color: rgba(0, 0, 0, .3); */
+	/* color: #eeeeee; */
+}
+
+.inicio_infos_direccion_p:nth-child(1){
+	padding-top: 10px;
+	transform: translateZ(50px);
+	animation: animation_1 6s ease-in-out infinite;
+}
+.inicio_infos_direccion_p:nth-child(2){
+	padding-top: 10px;
+	transform: rotateX(-90deg) translateZ(50px);
+	animation: animation_3 6s ease-in-out infinite;
+}
+.inicio_infos_direccion_p:nth-child(3){
+	transform: rotateX(90deg) translateZ(50px);
+	animation: animation_2 6s ease-in-out infinite;
+}
+
+
+
+.inicio_regiones_direccion{
+	list-style: none;
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.items_inicio_direccion{
+	font-size: 20px;
+	height: 20px;
+	width: 160px;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 30px;
+	text-align: center;
+	background-color: #313131;
+	color: #eeeeee;
+	/* box-shadow: 0 0 14px 0px #202020; */
+	transition: .4s;
+}
+.items_inicio_direccion:hover{
+	background-color: #eeeeee;
+	color: #313131;
+	transition: .4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+.slider{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	overflow: hidden;
+}
+
+.slide-item1, .slide-item2, .slide-item3, .slide-item4, .slide-item5, .slide-item6, 
+.slide-item7, .slide-item8, .slide-item9{
+	z-index: 5;
+	width: 180%;
+	height: 300%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.container-img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.imagen-hokkaido, .imagen-touhoku, .imagen-kanto, .imagen-chuubu, .imagen-kansai, .imagen-chuugoku, 
+.imagen-shikoku, .imagen-kyuushuu, .imagen-okinawa{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transform: rotateZ(360deg) scale(3);
+	background-image: url(images/hokkaido-sapporo.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 76%;
+}
+.imagen-touhoku{
+	background-image: url(images/touhoku-sendai.png);
+}
+.imagen-kanto{
+	background-image: url(images/kanto-tokyo.png);
+}
+.imagen-chuubu{
+	background-image: url(images/chuubu-niigata.png);
+}
+.imagen-kansai{
+	background-image: url(images/kansai-osaka.png);
+}
+.imagen-chuugoku{
+	background-image: url(images/chuugoku-hiroshima.png);
+}
+.imagen-shikoku{
+	background-image: url(images/shikoku-matsuyama.png);
+}
+.imagen-kyuushuu{
+	background-image: url(images/kyuushuu-nagasaki.png);
+}
+.imagen-okinawa{
+	background-image: url(images/okinawa-naha.png);
+}
+.imagen-hokkaido-1{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transform: rotateZ(360deg) scale(3);
+	background-image: url(images/hokkaido-sapporo.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 76%;
+}
+
+
+.brillo-medio{
+	filter: brightness(80%);
+}
+
+.imagen-touhoku-show, .imagen-kanto-show, .imagen-chuubu-show, .imagen-kansai-show, .imagen-chuugoku-show, 
+.imagen-shikoku-show, .imagen-kyuushuu-show, .imagen-okinawa-show, .imagen-hokkaido-show{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transform: rotateZ(0deg) scale(1);
+	background-image: url(images/touhoku-sendai.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 76%;
+}
+.imagen-kanto-show{
+	background-image: url(images/kanto-tokyo.png);
+}
+.imagen-chuubu-show{
+	background-image: url(images/chuubu-niigata.png);
+}
+.imagen-kansai-show{
+	background-image: url(images/kansai-osaka.png);
+}
+.imagen-chuugoku-show{
+	background-image: url(images/chuugoku-hiroshima.png);
+}
+.imagen-shikoku-show{
+	background-image: url(images/shikoku-matsuyama.png);
+}
+.imagen-kyuushuu-show{
+	background-image: url(images/kyuushuu-nagasaki.png);
+}
+.imagen-okinawa-show{
+	background-image: url(images/okinawa-naha.png);
+}
+.imagen-hokkaido-show{
+	background-image: url(images/hokkaido-sapporo.png);
+}
+
+
+
+
+
+
+
+.clip_path_centro{
+	clip-path: circle(22% at 50% 50%);
+}
+.clip_path_chico{
+	clip-path: circle(10% at 50% 50%);
+}
+
+
+
+
+
+.titulos-regiones{
+	position: absolute;
+	z-index: 35;
+	top: 38%;
+	margin: 0px auto 0px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: transparent;
+}
+
+
+.titulo-hokkaido, .titulo-touhoku, .titulo-kanto, .titulo-chuubu, .titulo-kansai, .titulo-chuugoku, 
+.titulo-shikoku, .titulo-kyuushuu, .titulo-okinawa{
+	display: inline-block;
+	position: relative;
+	padding-left: 70px;
+	top: 50%; 
+	font-size: 90px;
+	letter-spacing: 70px;
+	border-bottom: 2px solid #444;
+	color: #fff;
+	clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);	
+	text-shadow: #000 4px 0px 6px;
+	font-weight: 700;
+}
+
+.titulo-hokkaido-show, .titulo-touhoku-show, .titulo-kanto-show, .titulo-chuubu-show, .titulo-kansai-show, .titulo-chuugoku-show, 
+.titulo-shikoku-show, .titulo-kyuushuu-show, .titulo-okinawa-show{
+	display: inline-block;
+	position: relative;
+	padding-left: 70px;
+	top: 50%; 
+	font-size: 90px;
+	letter-spacing: 70px;
+	border-bottom: 2px solid #444;
+	color: #fff;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	text-shadow: #000 4px 0px 6px;
+	font-weight: 700;
+}
+
+
+.subtitulo-regiones{
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 36px;
+	letter-spacing: 20px;
+	color: #fff;
+	z-index: 40;
+	font-weight: 700;
+}
+
+
+.masInfo_btn_kanto{
+	cursor: pointer;
+	z-index: 42;
+	margin-top: 10px;
+	display: inline-block;
+	box-sizing: border-box;
+	padding-top: 10px;
+	font-size: 20px;
+	width: 140px;
+	height: 40px;
+	font-weight: 700;
+	border-radius: 60px;
+	background: linear-gradient(145deg, #cee8ff, #8bc9ff);
+	box-shadow:  5px 5px 10px #cee8ff,
+				-5px -5px 10px #8bc9ff;
+}
+.masInfo_btn_kanto:hover{
+	background: linear-gradient(145deg, #8bc9ff, #5db4ff);
+	box-shadow:  5px 5px 10px #8bc9ff,
+				-5px -5px 10px #5db4ff;
+}
+.masInfo_btn_hokkaido, .masInfo_btn_touhoku, .masInfo_btn_chuubu, .masInfo_btn_kansai, 
+.masInfo_btn_chuugoku, .masInfo_btn_shikoku, .masInfo_btn_kyuushuu, .masInfo_btn_okinawa{
+	display: none;
+	z-index: 42;
+	margin-top: 10px;
+	display: inline-block;
+	box-sizing: border-box;
+	padding-top: 10px;
+	font-size: 20px;
+	width: 140px;
+	height: 40px;
+	font-weight: 700;
+	border-radius: 60px;
+	cursor: pointer;
+}
+.masInfo_btn_hokkaido{
+	display: none;
+	background: linear-gradient(145deg, #e2e2e2, #c0c0c0);
+	box-shadow:  5px 5px 10px #e2e2e2,
+				-5px -5px 10px #c0c0c0;
+}
+.masInfo_btn_hokkaido:hover{
+	background: linear-gradient(145deg, #c0c0c0, #aaaaaa);
+	box-shadow:  5px 5px 10px #c0c0c0,
+				-5px -5px 10px #aaaaaa;
+}
+.masInfo_btn_touhoku{
+	display: none;
+	background: linear-gradient(145deg, #ffeed7, #ffcb82);
+	box-shadow:  5px 5px 10px #ffeed7,
+				-5px -5px 10px #ffcb82;
+}
+.masInfo_btn_touhoku:hover{
+	background: linear-gradient(145deg, #ffcb82, #ffb753);
+	box-shadow:  5px 5px 10px #ffcb82,
+				-5px -5px 10px #ffb753;
+}
+.masInfo_btn_chuubu{
+	display: none;
+	background: linear-gradient(145deg, #97a0ff, #7884ff);
+	box-shadow:  5px 5px 10px #97a0ff,
+				-5px -5px 10px #7884ff;
+}
+.masInfo_btn_chuubu:hover{
+	background: linear-gradient(145deg, #7884ff, #5f6cff);
+	box-shadow:  5px 5px 10px #7884ff,
+				-5px -5px 10px #5f6cff;
+}
+.masInfo_btn_kansai{
+	display: none;
+	background: linear-gradient(145deg, #fff9a5, #fff67b);
+	box-shadow:  5px 5px 10px #fff9a5,
+				-5px -5px 10px #fff67b;
+}
+.masInfo_btn_kansai:hover{
+	background: linear-gradient(145deg, #fff67b, #fff352);
+	box-shadow:  5px 5px 10px #fff67b,
+				-5px -5px 10px #fff352;
+}
+.masInfo_btn_chuugoku{
+	display: none;
+	background: linear-gradient(145deg, #ffddcb, #ffb68e);
+	box-shadow:  5px 5px 10px #ffddcb,
+				-5px -5px 10px #ffb68e;
+}
+.masInfo_btn_chuugoku:hover{
+	background: linear-gradient(145deg, #ffb68e, #ffa472);
+	box-shadow:  5px 5px 10px #ffb68e,
+				-5px -5px 10px #ffa472;
+}
+.masInfo_btn_shikoku{
+	display: none;
+	background: linear-gradient(145deg, #d9ffcf, #a2ff8b);
+	box-shadow:  5px 5px 10px #d9ffcf,
+				-5px -5px 10px #a2ff8b;
+}
+.masInfo_btn_shikoku:hover{
+	background: linear-gradient(145deg, #a2ff8b, #83ff64);
+	box-shadow:  5px 5px 10px #a2ff8b,
+				-5px -5px 10px #83ff64;
+}
+.masInfo_btn_kyuushuu{
+	display: none;
+	background: linear-gradient(145deg, #edd5ff, #ce8eff);
+	box-shadow:  5px 5px 10px #edd5ff,
+				-5px -5px 10px #ce8eff;
+}
+.masInfo_btn_kyuushuu:hover{
+	background: linear-gradient(145deg, #ce8eff, #be69ff);
+	box-shadow:  5px 5px 10px #ce8eff,
+				-5px -5px 10px #be69ff;
+}
+.masInfo_btn_okinawa{
+	display: none;
+	background: linear-gradient(145deg, #fffdcb, #fffb8d);
+	box-shadow:  5px 5px 10px #fffdcb,
+				-5px -5px 10px #fffb8d;
+}
+.masInfo_btn_okinawa:hover{
+	background: linear-gradient(145deg, #fffb8d, #fffa67);
+	box-shadow:  5px 5px 10px #fffb8d,
+				-5px -5px 10px #fffa67;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container_info{
+	display: inline-flex;
+	flex-direction: column;
+	top: -50px;
+	align-items: center;
+	width: 100vw;
+	position: relative;
+	z-index: 100;
+	transform: translateY(740px);
+}
+
+.info_btn_show, .info_btn_hide{
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	position: absolute;
+	top: 0px;
+	z-index: 102;
+	border-radius: 50px 50px 0 0;
+	width: 300px;
+	height: 60px;
+	overflow-x: hidden;
+	background-color: #e2e2e2;
+	transition: .3s;
+}
+.info_btn_hide{
+	display: none;
+}
+.info-hokkaido-back{
+	background-color: #e2e2e2;
+}
+.info-touhoku-back{
+	background-color: #ffeed7;
+}
+.info-kanto-back{
+	background-color: #cee8ff;
+}
+.info-chuubu-back{
+	background-color: #bbc1ff;
+}
+.info-kansai-back{
+	background-color: #fffcd3;
+}
+.info-chuugoku-back{
+	background-color: #ffddcb;
+}
+.info-shikoku-back{
+	background-color: #d9ffcf;
+}
+.info-kyuushuu-back{
+	background-color: #edd5ff;
+}
+.info-okinawa-back{
+	background-color: #fffdcb;
+}
+
+
+.toda_info_show, .toda_info_hide{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	margin-top: 40px;
+	z-index: 100;
+	width: 100vw;
+	overflow-x: hidden;
+	transition: .3s;
+}
+.toda_info_hide{
+	display: none;
+}
+.info-hokkaido{
+	background-color: #e2e2e2;
+}
+.info-touhoku{
+	background-color: #ffeed7;
+}
+.info-kanto{
+	background-color: #cee8ff;
+}
+.info-chuubu{
+	background-color: #bbc1ff;
+}
+.info-kansai{
+	background-color: #fffcd3;
+}
+.info-chuugoku{
+	background-color: #ffddcb;
+}
+.info-shikoku{
+	background-color: #d9ffcf;
+}
+.info-kyuushuu{
+	background-color: #edd5ff;
+}
+.info-okinawa{
+	background-color: #fffdcb;
+}
+
+
+
+
+
+.container-arrow-up{
+	cursor: pointer;
+	margin-top: 9px;
+	width: 30px;
+	height: 30px;
+	border-radius: 150px;
+	background: linear-gradient(145deg, #cacaca, #f0f0f0);
+	box-shadow:  5px 5px 10px #d0d0d0,
+				-5px -5px 10px #f0f0f0;
+}
+.container-arrow-up:hover{
+	background: linear-gradient(145deg, #c0c0c0, #b9b9b9);
+	box-shadow:  5px 5px 10px #c0c0c0,
+				-5px -5px 10px #b9b9b9;
+}
+.arrow_up_touhoku{
+	background: linear-gradient(145deg, #ffd59b, #ffc26d);
+	box-shadow:  5px 5px 10px #ffd59b,
+				-5px -5px 10px #ffc26d;
+}
+.arrow_up_touhoku:hover{
+	background: linear-gradient(145deg, #ffc26d, #ffb143);
+	box-shadow:  5px 5px 10px #ffc26d,
+				-5px -5px 10px #ffb143;
+}
+.arrow_up_kanto{
+	background: linear-gradient(145deg, #afdaff, #8bc9ff);
+	box-shadow:  5px 5px 10px #afdaff,
+				-5px -5px 10px #8bc9ff;
+}
+.arrow_up_kanto:hover{
+	background: linear-gradient(145deg, #8bc9ff, #5db4ff);
+	box-shadow:  5px 5px 10px #8bc9ff,
+				-5px -5px 10px #5db4ff;
+}
+.arrow_up_chuubu{
+	background: linear-gradient(145deg, #8791ff, #707cff);
+	box-shadow:  5px 5px 10px #8791ff,
+				-5px -5px 10px #707cff;
+}
+.arrow_up_chuubu:hover{
+	background: linear-gradient(145deg, #707cff, #5f6cff);
+	box-shadow:  5px 5px 10px #707cff,
+				-5px -5px 10px #5f6cff;
+}
+.arrow_up_kansai{
+	background: linear-gradient(145deg, #fff890, #fff56f);
+	box-shadow:  5px 5px 10px #dbd57b,
+				-5px -5px 10px #dad15e;
+}
+.arrow_up_kansai:hover{
+	background: linear-gradient(145deg, #fff570, #fff457);
+	box-shadow:  5px 5px 10px #e0d85d,
+				-5px -5px 10px #dfd443;
+}
+.arrow_up_chuugoku{
+	background: linear-gradient(145deg, #ffc6a8, #ffa372);
+	box-shadow:  5px 5px 10px #ffc6a8,
+				-5px -5px 10px #ffa372;
+}
+.arrow_up_chuugoku:hover{
+	background: linear-gradient(145deg, #ffa372, #ff945a);
+	box-shadow:  5px 5px 10px #ffa372,
+				-5px -5px 10px #ff945a;
+}
+.arrow_up_shikoku{
+	background: linear-gradient(145deg, #97e084, #88db73);
+	box-shadow:  5px 5px 10px #97e084,
+				-5px -5px 10px #88db73;
+}
+.arrow_up_shikoku:hover{
+	background: linear-gradient(145deg, #88db73, #6cdf50);
+	box-shadow:  5px 5px 10px #88db73,
+				-5px -5px 10px #6cdf50;
+}
+.arrow_up_kyuushuu{
+	background: linear-gradient(145deg, #ddb1ff, #ce8eff);
+	box-shadow:  5px 5px 10px #ddb1ff,
+				-5px -5px 10px #ce8eff;
+}
+.arrow_up_kyuushuu:hover{
+	background: linear-gradient(145deg, #ce8eff, #be69ff);
+	box-shadow:  5px 5px 10px #ce8eff,
+				-5px -5px 10px #be69ff;
+}
+.arrow_up_okinawa{
+	background: linear-gradient(145deg, #fffca6, #fffb7a);
+	box-shadow:  5px 5px 10px #e0de8f,
+				-5px -5px 10px #e6e16d;
+}
+.arrow_up_okinawa:hover{
+	background: linear-gradient(145deg, #fffa6a, #fff948);
+	box-shadow:  5px 5px 10px #e9e45f,
+				-5px -5px 10px #e7e241;
+}
+.fa-chevron-down{
+	margin-top: 5px;
+	margin-left: 5px;
+	color: #333333;
+	font-size: 20px;
+	width: 40px;
+	height: 40px;
+}
+
+
+
+
+.arrow_hacia_inicio{
+	position: fixed;
+	top: 680px;
+	left: 1350px;
+	z-index: 2100;
+	background-color: #313131;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 50%;
+	box-shadow: 0 0 6px #fff;
+}
+.arrow_hacia_inicio_flecha{
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #333333;
+	font-size: 20px;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+}
+.arrow_hacia_inicio:hover{
+	background-color: #fff;
+	box-shadow: 0 0 6px #313131;
+}
+.arrow_hacia_inicio:hover .arrow_hacia_inicio_flecha{
+	color: #313131;
+}
+
+
+.todaLaInfo{
+	width: 90%;
+	/* height: 700px; */
+	/* background-color: rgba(0, 0, 255, 0.315); */
+	margin: 60px auto 0px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.info_como_llegar{
+	width: calc(40% - 20px);
+	min-width: 260px;
+	height: 700px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+
+}
+.img-4-info{
+	flex-grow: .8;
+	width: 100%;
+	/* height: 500px; */
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+}
+.grid_item_img:first-child{
+	border-radius: 14px 0 0 0;
+}
+.grid_item_img:nth-child(2){
+	border-radius: 0 14px 0 0;
+}
+.grid_item_img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.info_llegar_a_lugar{
+	background-color: #313131;
+	flex-grow: 1;
+	border-radius: 0 0 14px 14px;
+}
+.info_llegar_a_lugar h3{
+	padding: 10px;
+	padding-left: 16PX;
+	font-size: 30px;
+	border-bottom: 1px solid #fff;
+}
+.info_llegar_a_lugar h3 span{
+	color: rgba(255, 255, 255, .6);
+}
+.info_llegar_a_lugar p{
+	line-height: 20pt;
+	font-size: 16px;
+	padding: 12px 16px 0 16px;
+}
+
+
+.map_region_hokkaido_container, .map_region_touhoku_container, .map_region_kanto_container, .map_region_chuubu_container, 
+.map_region_kansai_container, .map_region_chuugoku_container, .map_region_shikoku_container, .map_region_kyuushuu_container, 
+.map_region_okinawa_container{
+	width: 60%;
+	min-width: 260px;
+}
+
+.map_region{
+	width: 90%;
+	margin-left: 5%;
+	height: 100%;
+	object-fit: contain;
+}
+
+
+
+/* ----------------------------	footer	----------------------------------------- */
+.footer_container{
+	width: 100%;
+	min-height: 220px;
+	padding-top: 10px;
+	background-color: #313131;
+	color: #fff;
+
+
+}
+.footer_items{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 auto 0 auto;
+	width: 86%;
+	justify-content: flex-start;
+	border-top: 2px solid #fff;
+	padding-left: 20px;
+	padding-right: 60px;
+
+}
+.footer_info_item:first-child{
+	max-width: 500px;
+	flex-grow: .5;
+	display: flex;
+	flex-direction: row;
+	line-height: 20px;
+}
+.footer_info_item{
+	height: 180px;
+	margin: 10px;
+	list-style: none;
+}
+
+.footer_logo_item img {
+	display: inline;
+	height: 180px;
+	object-fit: contain;
+}
+.footer_logo_info{
+	display: inline-block;
+	height: 180px;
+	padding: 20px 0 0 30px;
+}
+
+.footer_contact, .footer_media, .footer_project{
+	padding-top: 12px;
+}
+.contact_item1{
+	color: rgb(255, 54, 54);
+	font-size: 25px;
+	font-weight: 700;
+	padding-bottom: 3px;
+}
+.contact_item2{
+	font-size: 14px;
+	color: #adadad;
+}
+.contact_item3{
+	margin-top: 20px;
+	list-style: none;
+}
+.img_logos{
+	display: inline-block;
+	margin: 6px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.img_logos img {
+	margin: 2px;
+	width: 26px;
+}
+.img_logos:hover{
+	background-color: rgb(255, 80, 80);
+}
+.other_project_item{
+	margin: 4px;
+	font-size: 16px;
+}
+
+
+
+
+.contact_item3 i{
+	font-size: 20px;
+	display: inline-block;
+
+}
+.contact_item3 p{
+	font-size: 16px;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

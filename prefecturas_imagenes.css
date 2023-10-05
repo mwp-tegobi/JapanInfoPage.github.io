@@ -1,0 +1,493 @@
+.explorar_por_zonas{
+	width: 90%;
+	margin: 60px auto 0px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.titulo_explorar{
+	padding: 10px 0 10px 20px;
+	border-bottom: 2px solid #313131;
+	font-size: 40px;
+	letter-spacing: 14px;
+	color: #313131;
+	text-align: center;
+	font-weight: 600;
+}
+.explorar_zonas_container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 40px;
+	width: 100%;
+}
+.explorar_zonas_item{
+	margin: 26px 8px 13px 8px;
+	min-width: 240px;
+	height: 150px;
+	background-color: red;
+	border-radius: 6px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .4s;
+}
+.explorar_zonas_item:hover{
+    transform: translate(-4px,-4px);
+    box-shadow: 8px 8px 4px #313131;
+    /* transform: scale(1.2); */
+    transition: .4s;
+}
+
+
+
+
+
+/* imagenes de hokkaido */
+.oshima-ken{
+    background-image: url(images/hokkaido_prefecturas/oshima_hokkaido_prefectura.jpg);
+}
+.hiyama-ken{
+    background-image: url(images/hokkaido_prefecturas/hiyama_hokkaido_prefectura.jpg);
+}
+.iburi-ken{
+    background-image: url(images/hokkaido_prefecturas/iburi_hokkaido_prefectura.jpg);
+}
+.shiribeshi-ken{
+    background-image: url(images/hokkaido_prefecturas/shiribeshi_hokkaido_prefectura.jpg);
+}
+.ishikari-ken{
+    background-image: url(images/hokkaido_prefecturas/ishikari_hokkaido_prefectura.jpg);
+}
+.hidaka-ken{
+    background-image: url(images/hokkaido_prefecturas/hidaka_hokkaido_prefectura.jpg);
+}
+.tokachi-ken{
+    background-image: url(images/hokkaido_prefecturas/tokachi_hokkaido_prefectura.jpg);
+}
+.kushiro-ken{
+    background-image: url(images/hokkaido_prefecturas/kushiro_hokkaido_prefectura.jpg);
+}
+.nemuro-ken{
+    background-image: url(images/hokkaido_prefecturas/nemuro_hokkaido_prefectura.jpg);
+}
+.abashiri-ken{
+    background-image: url(images/hokkaido_prefecturas/abashiri_hokkaido_prefectura.jpg);
+}
+.kamikawa-ken{
+    background-image: url(images/hokkaido_prefecturas/kamikawa_hokkaido_prefectura.jpg);
+}
+.sorachi-ken{
+    background-image: url(images/hokkaido_prefecturas/sorachi_hokkaido_prefectura.jpg);
+}
+.rumoi-ken{
+    background-image: url(images/hokkaido_prefecturas/rumoi_hokkaido_prefectura.jpg);
+}
+.souya-ken{
+    background-image: url(images/hokkaido_prefecturas/souya_hokkaido_prefectura.jpg);
+}
+
+
+/* imagenes de touhoku */
+.aomori-ken{
+    background-image: url(images/touhoku_prefecturas/aomori_touhoku_prefectura.jpg);
+}
+.akita-ken{
+    background-image: url(images/touhoku_prefecturas/akita_touhoku_prefectura.jpg);
+}
+.iwate-ken{
+    background-image: url(images/touhoku_prefecturas/iwate_touhoku_prefectura.jpg);
+}
+.miyagi-ken{
+    background-image: url(images/touhoku_prefecturas/miyagi_touhoku_prefectura.jpg);
+}
+.yamagata-ken{
+    background-image: url(images/touhoku_prefecturas/yamagata_touhoku_prefectura.jpg);
+}
+.fukushima-ken{
+    background-image: url(images/touhoku_prefecturas/fukushima_touhoku_prefectura.jpg);
+}
+
+
+/* imagenes de kanto */
+.gunma-ken{
+    background-image: url(images/kanto_prefecturas/gunma_kanto_prefectura.jpg);
+}
+.tochigi-ken{
+    background-image: url(images/kanto_prefecturas/tochigi_kanto_prefectura.jpg);
+}
+.ibaraki-ken{
+    background-image: url(images/kanto_prefecturas/ibaraki_kanto_prefectura.jpg);
+}
+.saitama-ken{
+    background-image: url(images/kanto_prefecturas/saitama_kanto_prefectura.jpg);
+}
+.tokyo-ken{
+    background-image: url(images/kanto_prefecturas/tokyo_kanto_prefectura.jpg);
+}
+.chiba-ken{
+    background-image: url(images/kanto_prefecturas/chiba_kanto_prefectura.jpg);
+}
+.kanagawa-ken{
+    background-image: url(images/kanto_prefecturas/kanagawa_kanto_prefectura.jpg);
+}
+
+
+/* imagenes de chuubu */
+.aichi-ken{
+    background-image: url(images/chuubu_prefecturas/aichi_chuubu_prefectura.jpg);
+}
+.fukui-ken{
+    background-image: url(images/chuubu_prefecturas/fukui_chuubu_prefectura.jpg);
+}
+.gifu-ken{
+    background-image: url(images/chuubu_prefecturas/gifu_chuubu_prefectura.jpg);
+}
+.ishikawa-ken{
+    background-image: url(images/chuubu_prefecturas/ishikawa_chuubu_prefectura.jpg);
+}
+.nagano-ken{
+    background-image: url(images/chuubu_prefecturas/nagano_chuubu_prefectura.jpg);
+}
+.shizouka-ken{
+    background-image: url(images/chuubu_prefecturas/shizouka_chuubu_prefectura.jpg);
+}
+.toyama-ken{
+    background-image: url(images/chuubu_prefecturas/toyama_chuubu_prefectura.jpg);
+}
+.yamanashi-ken{
+    background-image: url(images/chuubu_prefecturas/yamanashi_chuubu_prefectura.jpg);
+}
+
+
+/* imagenes de kansai */
+.hyogo-ken{
+    background-image: url(images/kansai_prefecturas/hyogo_kansai_prefectura.jpg);
+}
+.kyoto-ken{
+    background-image: url(images/kansai_prefecturas/kyoto_kansai_prefectura.jpg);
+}
+.shiga-ken{
+    background-image: url(images/kansai_prefecturas/shiga_kansai_prefectura.jpg);
+}
+.mie-ken{
+    background-image: url(images/kansai_prefecturas/mie_kansai_prefectura.jpg);
+}
+.nara-ken{
+    background-image: url(images/kansai_prefecturas/nara_kansai_prefectura.jpg);
+}
+.osaka-ken{
+    background-image: url(images/kansai_prefecturas/osaka_kansai_prefectura.jpg);
+}
+.wakayama-ken{
+    background-image: url(images/kansai_prefecturas/wakayama_kansai_prefectura.jpg);
+}
+
+
+/* imagenes de chuugoku */
+.tottori-ken{
+    background-image: url(images/chuugoku_prefecturas/tottori_chuugoku_prefectura.jpg);
+}
+.okayama-ken{
+    background-image: url(images/chuugoku_prefecturas/okayama_chuugoku_prefectura.jpg);
+}
+.shimane-ken{
+    background-image: url(images/chuugoku_prefecturas/shimane_chuugoku_prefectura.jpg);
+}
+.hiroshima-ken{
+    background-image: url(images/chuugoku_prefecturas/hiroshima_chuugoku_prefectura.jpg);
+}
+.yamaguchi-ken{
+    background-image: url(images/chuugoku_prefecturas/yamaguchi_chuugoku_prefectura.jpg);
+}
+
+
+/* imagenes de shikoku */
+.ehime-ken{
+    background-image: url(images/shikoku_prefecturas/ehime_shikoku_prefectura.jpg);
+}
+.tokushima-ken{
+    background-image: url(images/shikoku_prefecturas/tokushima_shikoku_prefectura.jpg);
+}
+.kagawa-ken{
+    background-image: url(images/shikoku_prefecturas/kagawa_shikoku_prefectura.jpg);
+}
+.kochi-ken{
+    background-image: url(images/shikoku_prefecturas/kochi_shikoku_prefectura.jpg);
+}
+
+
+/* imagenes de kyuushuu */
+.oita-ken{
+    background-image: url(images/kyuushuu_prefecturas/oita_kyuushuu_prefectura.jpg);
+}
+.nagasaki-ken{
+    background-image: url(images/kyuushuu_prefecturas/nagasaki_kyuushuu_prefectura.jpg);
+}
+.kumamoto-ken{
+    background-image: url(images/kyuushuu_prefecturas/kumamoto_kyuushuu_prefectura.jpg);
+}
+.kagoshima-ken{
+    background-image: url(images/kyuushuu_prefecturas/kagoshima_kyuushuu_prefectura.jpg);
+}
+.fukuoka-ken{
+    background-image: url(images/kyuushuu_prefecturas/fukuoka_kyuushuu_prefectura.jpg);
+}
+.miyazaki-ken{
+    background-image: url(images/kyuushuu_prefecturas/miyazaki_kyuushuu_prefectura.jpg);
+}
+.saga-ken{
+    background-image: url(images/kyuushuu_prefecturas/saga_kyuushuu_prefectura.jpg);
+}
+
+
+/* imagenes de okinawa */
+.main-ken{
+    background-image: url(images/okinawa_prefecturas/main_okinawa_prefectura.jpg);
+}
+.other-ken{
+    background-image: url(images/okinawa_prefecturas/other_okinawa_prefectura.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+.texto-prefectura {
+    color: #fff;
+    font-weight: 700;
+    margin-top: 2px;
+    padding: 4px;
+    border-radius: 6px;
+    font-size: 24px;
+}
+
+
+
+
+
+/* estilo del mapa de prefecturas */
+.map_prefectura{
+    width: 70%;
+    height: 70%;
+    margin-top: 6px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/* mapa de hokkaido prefecturas */
+.oshima-ken_map{
+    background-image: url(images/hokkaido_prefecturas/prefectura_maps/oshima_hokkaido_map.png);
+}
+.hiyama-ken_map{
+    background-image: url(images/hokkaido_prefecturas/prefectura_maps/hiyama_hokkaido_map.png);
+}
+.iburi-ken_map{
+    background-image: url(images/hokkaido_prefecturas/prefectura_maps/iburi_hokkaido_map.png);
+}
+.shiribeshi-ken_map{
+    background-image: url(images/hokkaido_prefecturas/prefectura_maps/shiribeshi_hokkaido_map.png);
+}
+.ishikari-ken_map{
+    background-image: url(images/hokkaido_prefecturas/prefectura_maps/ishikari_hokkaido_map.png);
+}
+.hidaka-ken_map{
+    background-image: url(images/hokkaido_prefecturas/prefectura_maps/hidaka_hokkaido_map.png);
+}
+.tokachi-ken_map{
+    background-image: url(images/hokkaido_prefecturas/prefectura_maps/tokachi_hokkaido_map.png);
+}
+.kushiro-ken_map{
+    background-image: url(images/hokkaido_prefecturas/prefectura_maps/kushiro_hokkaido_map.png);
+}
+.nemuro-ken_map{
+    background-image: url(images/hokkaido_prefecturas/prefectura_maps/nemuro_hokkaido_map.png);
+}
+.abashiri-ken_map{
+    background-image: url(images/hokkaido_prefecturas/prefectura_maps/abashiri_hokkaido_map.png);
+}
+.kamikawa-ken_map{
+    background-image: url(images/hokkaido_prefecturas/prefectura_maps/kamikawa_hokkaido_map.png);
+}
+.sorachi-ken_map{
+    background-image: url(images/hokkaido_prefecturas/prefectura_maps/sorachi_hokkaido_map.png);
+}
+.rumoi-ken_map{
+    background-image: url(images/hokkaido_prefecturas/prefectura_maps/rumoi_hokkaido_map.png);
+}
+.souya-ken_map{
+    background-image: url(images/hokkaido_prefecturas/prefectura_maps/souya_hokkaido_map.png);
+}
+
+
+/* mapa de touhoku prefecturas */
+.aomori-ken_map{
+    background-image: url(images/touhoku_prefecturas/prefectura_maps/aomori_touhoku_map.png);
+}
+.akita-ken_map{
+    background-image: url(images/touhoku_prefecturas/prefectura_maps/akita_touhoku_map.png);
+}
+.iwate-ken_map{
+    background-image: url(images/touhoku_prefecturas/prefectura_maps/iwate_touhoku_map.png);
+}
+.miyagi-ken_map{
+    background-image: url(images/touhoku_prefecturas/prefectura_maps/miyagi_touhoku_map.png);
+}
+.yamagata-ken_map{
+    background-image: url(images/touhoku_prefecturas/prefectura_maps/yamagata_touhoku_map.png);
+}
+.fukushima-ken_map{
+    background-image: url(images/touhoku_prefecturas/prefectura_maps/fukushima_touhoku_map.png);
+}
+
+
+/* mapa de kanto prefecturas */
+.gunma-ken_map{
+    background-image: url(images/kanto_prefecturas/prefectura_maps/gunma_kanto_map.png);
+}
+.tochigi-ken_map{
+    background-image: url(images/kanto_prefecturas/prefectura_maps/tochigi_kanto_map.png);
+}
+.ibaraki-ken_map{
+    background-image: url(images/kanto_prefecturas/prefectura_maps/ibaraki_kanto_map.png);
+}
+.saitama-ken_map{
+    background-image: url(images/kanto_prefecturas/prefectura_maps/saitama_kanto_map.png);
+}
+.tokyo-ken_map{
+    background-image: url(images/kanto_prefecturas/prefectura_maps/tokyo_kanto_map.png);
+}
+.chiba-ken_map{
+    background-image: url(images/kanto_prefecturas/prefectura_maps/chiba_kanto_map.png);
+}
+.kanagawa-ken_map{
+    background-image: url(images/kanto_prefecturas/prefectura_maps/kanagawa_kanto_map.png);
+}
+
+
+/* mapa de chuubu prefecturas */
+.aichi-ken_map{
+    background-image: url(images/chuubu_prefecturas/prefectura_maps/aichi_chuubu_map.png);
+}
+.fukui-ken_map{
+    background-image: url(images/chuubu_prefecturas/prefectura_maps/fukui_chuubu_map.png);
+}
+.gifu-ken_map{
+    background-image: url(images/chuubu_prefecturas/prefectura_maps/gifu_chuubu_map.png);
+}
+.ishikawa-ken_map{
+    background-image: url(images/chuubu_prefecturas/prefectura_maps/ishikawa_chuubu_map.png);
+}
+.nagano-ken_map{
+    background-image: url(images/chuubu_prefecturas/prefectura_maps/nagano_chuubu_map.png);
+}
+.shizouka-ken_map{
+    background-image: url(images/chuubu_prefecturas/prefectura_maps/shizouka_chuubu_map.png);
+}
+.toyama-ken_map{
+    background-image: url(images/chuubu_prefecturas/prefectura_maps/toyama_chuubu_map.png);
+}
+.yamanashi-ken_map{
+    background-image: url(images/chuubu_prefecturas/prefectura_maps/yamanashi_chuubu_map.png);
+}
+
+
+/* mapa de kansai prefecturas */
+.hyogo-ken_map{
+    background-image: url(images/kansai_prefecturas/prefectura_maps/hyogo_kansai_map.png);
+}
+.kyoto-ken_map{
+    background-image: url(images/kansai_prefecturas/prefectura_maps/kyoto_kansai_map.png);
+}
+.shiga-ken_map{
+    background-image: url(images/kansai_prefecturas/prefectura_maps/shiga_kansai_map.png);
+}
+.mie-ken_map{
+    background-image: url(images/kansai_prefecturas/prefectura_maps/mie_kansai_map.png);
+}
+.nara-ken_map{
+    background-image: url(images/kansai_prefecturas/prefectura_maps/nara_kansai_map.png);
+}
+.osaka-ken_map{
+    background-image: url(images/kansai_prefecturas/prefectura_maps/osaka_kansai_map.png);
+}
+.wakayama-ken_map{
+    background-image: url(images/kansai_prefecturas/prefectura_maps/wakayama_kansai_map.png);
+}
+
+
+/* mapa de chuugoku prefecturas */
+.tottori-ken_map{
+    background-image: url(images/chuugoku_prefecturas/prefectura_maps/tottori_chuugoku_map.png);
+}
+.okayama-ken_map{
+    background-image: url(images/chuugoku_prefecturas/prefectura_maps/okayama_chuugoku_map.png);
+}
+.shimane-ken_map{
+    background-image: url(images/chuugoku_prefecturas/prefectura_maps/shimane_chuugoku_map.png);
+}
+.hiroshima-ken_map{
+    background-image: url(images/chuugoku_prefecturas/prefectura_maps/hiroshima_chuugoku_map.png);
+}
+.yamaguchi-ken_map{
+    background-image: url(images/chuugoku_prefecturas/prefectura_maps/yamaguchi_chuugoku_map.png);
+}
+
+
+/* mapa de shikoku prefecturas */
+.ehime-ken_map{
+    background-image: url(images/shikoku_prefecturas/prefectura_maps/ehime_shikoku_map.png);
+}
+.kagawa-ken_map{
+    background-image: url(images/shikoku_prefecturas/prefectura_maps/kagawa_shikoku_map.png);
+}
+.tokushima-ken_map{
+    background-image: url(images/shikoku_prefecturas/prefectura_maps/tokushima_shikoku_map.png);
+}
+.kochi-ken_map{
+    background-image: url(images/shikoku_prefecturas/prefectura_maps/kochi_shikoku_map.png);
+}
+
+
+/* mapa de kyuushuu prefecturas */
+.saga-ken_map{
+    background-image: url(images/kyuushuu_prefecturas/prefectura_maps/saga_kyuushuu_map.png);
+}
+.oita-ken_map{
+    background-image: url(images/kyuushuu_prefecturas/prefectura_maps/oita_kyuushuu_map.png);
+}
+.kumamoto-ken_map{
+    background-image: url(images/kyuushuu_prefecturas/prefectura_maps/kumamoto_kyuushuu_map.png);
+}
+.kagoshima-ken_map{
+    background-image: url(images/kyuushuu_prefecturas/prefectura_maps/kagoshima_kyuushuu_map.png);
+}
+.nagasaki-ken_map{
+    background-image: url(images/kyuushuu_prefecturas/prefectura_maps/nagasaki_kyuushuu_map.png);
+}
+.miyazaki-ken_map{
+    background-image: url(images/kyuushuu_prefecturas/prefectura_maps/miyazaki_kyuushuu_map.png);
+}
+.fukuoka-ken_map{
+    background-image: url(images/kyuushuu_prefecturas/prefectura_maps/fukuoka_kyuushuu_map.png);
+}
+
+
+/* mapa de okinawa prefecturas */
+.main-ken_map{
+    background-image: url(images/okinawa_prefecturas/prefectura_maps/main_okinawa_map.png);
+}
+.other-ken_map{
+    background-image: url(images/okinawa_prefecturas/prefectura_maps/other_okinawa_map.png);
+}
+

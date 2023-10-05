@@ -1,0 +1,69 @@
+@media (min-width: 150px) and (max-width: 600px){
+	.container_inicio_jpn{
+		flex-direction: column;
+	}
+	.inicio_jpn_item:nth-child(1){
+		width: 100vw;
+		height: 50vh;
+		background-color: #eeeeee;
+	}
+	.inicio_jpn_item:last-child{
+		width: 100vw;
+		height: 50vh;
+		background-color: #eeeeee;
+		background-color: blue;
+	}
+	.inicio_item_animation_display{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: green;
+		/* background-color: #eeeeee; */
+		display: flex;
+		flex-direction: column;
+	}
+	.inicio_item_jpn_map{
+		margin: 20px;
+		width: calc(100% - 40px);
+		height: calc(30% - 40px);
+	}
+	.inicio_item_jpn_infos{
+		margin: 20px;
+		width:  calc(100% - 40px);
+		height: calc(70% - 40px);
+	}
+
+
+
+}
+
+
+
+@media (min-width: 150px) and (max-width: 400px){
+    .titulo_gastronomia{
+        font-size: 20px;
+    }
+    
+
+}
+@media (min-width: 361px) and (max-width: 520px){
+    .titulo_gastronomia{
+        font-size: 30px;
+    }
+}
+@media (min-width: 150px) and (max-width: 694px){
+    .gastronomia_grid_item{
+        width: 92vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

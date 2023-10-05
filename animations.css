@@ -1,0 +1,111 @@
+@keyframes animation_inicio_jpn_opacity {
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+@keyframes animation_inicio_jpn_out1 {
+	from{transform: translateX(0);}
+	to{transform: translateX(-100%);}
+}
+@keyframes animation_inicio_jpn_out2 {
+	from{transform: translateX(0);}
+	to{transform: translateX(100%);}
+}
+@keyframes animation_inicio_jpn_out1_resolution {
+	from{transform: translateY(0);}
+	to{transform: translateY(-100%);}
+}
+@keyframes animation_inicio_jpn_out2_resolution {
+	from{transform: translateY(0);}
+	to{transform: translateY(100%);}
+}
+
+
+
+@keyframes animation_1{
+	0%{transform: translateZ(50px);}
+	20%{transform: rotateX(-90deg) translateZ(50px);
+		opacity: 1;
+	}
+	30%{transform: rotateX(-90deg) translateZ(50px);
+		opacity: 0;
+	}
+	50%{transform: rotateX(90deg) translateZ(50px);
+		opacity: 0;
+	}
+	60%{transform: rotateX(90deg) translateZ(50px);
+		opacity: 1;
+	}
+	80%{transform: translateZ(50px);}
+	100%{transform: translateZ(50px);}
+}
+@keyframes animation_2{
+	0%{transform: rotateX(90deg) translateZ(50px);}
+	20%{transform: translateZ(50px);}
+	30%{transform: translateZ(50px);}
+	50%{transform: rotateX(-90deg) translateZ(50px);
+		opacity: 1;
+	}
+	60%{transform: rotateX(-90deg) translateZ(50px);
+		opacity: 0;
+	}
+	80%{transform: rotateX(90deg) translateZ(50px);
+		opacity: 0;
+	}
+	100%{transform: rotateX(90deg) translateZ(50px);
+		opacity: 1;
+	}
+}
+@keyframes animation_3{
+	0%{transform: rotateX(-90deg) translateZ(50px);
+		opacity: 0;
+	}
+	20%{transform: rotateX(90deg) translateZ(50px);
+		opacity: 0;
+	}
+	30%{transform: rotateX(90deg) translateZ(50px);
+		opacity: 1;
+	}
+	50%{transform: translateZ(50px);}
+	60%{transform: translateZ(50px);}
+	80%{transform: rotateX(-90deg) translateZ(50px);}
+	100%{transform: rotateX(-90deg) translateZ(50px);}
+}
+
+
+@keyframes anillo-item-out {
+	0%{
+		transform: rotateZ(0deg) scale(1);
+		opacity: 1;
+	}
+	40%{opacity: 1}
+	50%{opacity: 0}
+	100%{
+		opacity: 0;
+		transform: rotateZ(360deg) scale(3)
+	}
+} 
+@keyframes anillo-item-in {
+	0%{
+		transform: rotateZ(-360deg) scale(3);
+		opacity: 0;
+	}
+	40%{opacity: 0}	
+	50%{opacity: 1}
+	100%{
+		opacity: 1;
+		transform: rotateZ(0deg) scale(1);
+	}
+}
+
+
+
+@keyframes hide-text {
+	0%{clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)}
+	100%{clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)}
+}
+@keyframes show-text {
+	0%{clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)}
+	100%{clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)}
+}
+
+
