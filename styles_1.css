@@ -414,7 +414,6 @@ body{
 	justify-content: center;
 	overflow: hidden;
 }
-
 .container-img{
 	position: absolute;
 	width: 100%;
@@ -422,7 +421,8 @@ body{
 	overflow: hidden;
 }
 
-.imagen-hokkaido, .imagen-touhoku{
+.imagen-hokkaido, .imagen-touhoku, .imagen-kanto, .imagen-chuubu, .imagen-kansai, .imagen-chuugoku, 
+.imagen-shikoku, .imagen-kyuushuu, .imagen-okinawa{
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -430,14 +430,14 @@ body{
 	transform: rotateZ(360deg) scale(3);
 }
 .imagen-hokkaido-1{
-	
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	opacity: 0;
 	transform: rotateZ(360deg) scale(3);
 }
-.imagen-hokkaido-show, .imagen-touhoku-show{
+.imagen-touhoku-show, .imagen-kanto-show, .imagen-chuubu-show, .imagen-kansai-show, .imagen-chuugoku-show, 
+.imagen-shikoku-show, .imagen-kyuushuu-show, .imagen-okinawa-show, .imagen-hokkaido-show{
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -447,108 +447,11 @@ body{
 .brillo-medio{
 	filter: brightness(80%);
 }
-
 .img_animation_giro{
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
 }
-
-
-/* 
-.imagen-hokkaido, .imagen-touhoku, .imagen-kanto, .imagen-chuubu, .imagen-kansai, .imagen-chuugoku, 
-.imagen-shikoku, .imagen-kyuushuu, .imagen-okinawa{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	opacity: 0;
-	transform: rotateZ(360deg) scale(3);
-	background-image: url(images/hokkaido-sapporo.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 76%;
-}
-.imagen-touhoku{
-	background-image: url(images/touhoku-sendai.png);
-}
-.imagen-kanto{
-	background-image: url(images/kanto-tokyo.png);
-}
-.imagen-chuubu{
-	background-image: url(images/chuubu-niigata.png);
-}
-.imagen-kansai{
-	background-image: url(images/kansai-osaka.png);
-}
-.imagen-chuugoku{
-	background-image: url(images/chuugoku-hiroshima.png);
-}
-.imagen-shikoku{
-	background-image: url(images/shikoku-matsuyama.png);
-}
-.imagen-kyuushuu{
-	background-image: url(images/kyuushuu-nagasaki.png);
-}
-.imagen-okinawa{
-	background-image: url(images/okinawa-naha.png);
-}
-.imagen-hokkaido-1{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	opacity: 0;
-	transform: rotateZ(360deg) scale(3);
-	background-image: url(images/hokkaido-sapporo.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 76%;
-}
-
-
-
-
-.imagen-touhoku-show, .imagen-kanto-show, .imagen-chuubu-show, .imagen-kansai-show, .imagen-chuugoku-show, 
-.imagen-shikoku-show, .imagen-kyuushuu-show, .imagen-okinawa-show, .imagen-hokkaido-show{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	opacity: 1;
-	transform: rotateZ(0deg) scale(1);
-	background-image: url(images/touhoku-sendai.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 76%;
-}
-.imagen-kanto-show{
-	background-image: url(images/kanto-tokyo.png);
-}
-.imagen-chuubu-show{
-	background-image: url(images/chuubu-niigata.png);
-}
-.imagen-kansai-show{
-	background-image: url(images/kansai-osaka.png);
-}
-.imagen-chuugoku-show{
-	background-image: url(images/chuugoku-hiroshima.png);
-}
-.imagen-shikoku-show{
-	background-image: url(images/shikoku-matsuyama.png);
-}
-.imagen-kyuushuu-show{
-	background-image: url(images/kyuushuu-nagasaki.png);
-}
-.imagen-okinawa-show{
-	background-image: url(images/okinawa-naha.png);
-}
-.imagen-hokkaido-show{
-	background-image: url(images/hokkaido-sapporo.png);
-} */
-
-
-
-
-
-
 
 .clip_path_centro{
 	clip-path: circle(22% at 50% 50%);
@@ -556,9 +459,6 @@ body{
 .clip_path_chico{
 	clip-path: circle(10% at 50% 50%);
 }
-
-
-
 
 
 .titulos-regiones{
@@ -572,8 +472,6 @@ body{
 	text-align: center;
 	background-color: transparent;
 }
-
-
 .titulo-hokkaido, .titulo-touhoku, .titulo-kanto, .titulo-chuubu, .titulo-kansai, .titulo-chuugoku, 
 .titulo-shikoku, .titulo-kyuushuu, .titulo-okinawa{
 	display: inline-block;
