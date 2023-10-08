@@ -112,7 +112,7 @@ items_inicio_direccion.forEach((elemento,index) =>{
                             <ul class="footer_items">
                                 <li class="footer_info_item">
                                     <div class="footer_logo_item">
-                                        <img src="images/logo-japan.png">
+                                        <img loading="lazy" src="images/logo-japan.png">
                                     </div>
                                     <p class="footer_logo_info">En esta pagina nos encargamos de recopilar la informacion sobre el mapa de 
                                         japon, la gastronomia como asi de proporcionar libros para el estudio del idioma japones.
@@ -131,13 +131,13 @@ items_inicio_direccion.forEach((elemento,index) =>{
                                     <h5 class="contact_item2">Social Media</h5>
                                     <div class="contact_item3">
                                         <a href="#" class="img_logos">
-                                            <img src="images/logos/facebook_logo.png">
+                                            <img loading="lazy" src="images/logos/facebook_logo.png">
                                         </a>
                                         <a href="#" class="img_logos">
-                                            <img src="images/logos/twitter_logo.png">
+                                            <img loading="lazy" src="images/logos/twitter_logo.png">
                                         </a>
                                         <a href="#" class="img_logos">
-                                            <img src="images/logos/instagram_logo.png">
+                                            <img loading="lazy" src="images/logos/instagram_logo.png">
                                         </a>
                                     </div>
                                 </li>
