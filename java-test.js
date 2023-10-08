@@ -115,7 +115,6 @@ btnDireccion.forEach((el,index1) =>{
 				}
             });
             todaInfoRegion.forEach((elInfoRegion,indInfoRegion) =>{
-                console.dir(elInfoRegion + "faasdasdasdasdasda")
                 if(elInfoRegion.classList.contains("mostrado")){
                     elInfoRegion.classList.toggle("toda_info_show");
                     elInfoRegion.classList.toggle("toda_info_hide");

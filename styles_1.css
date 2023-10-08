@@ -308,27 +308,13 @@ body{
 	position: relative;
 }
 .items_inicio_map{
+	display: none;
 	list-style: none;
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	display: none;
-	background-size: contain;
-	background-position: center center;
-	background-repeat: no-repeat;
+	object-fit: contain;
 }
-#hokkaido_inicio_map{background-image: url(images/MAP/mapa_inicio/hokkaido_inicio.png);}
-#touhoku_inicio_map{background-image: url(images/MAP/mapa_inicio/touhoku_inicio.png);}
-#kanto_inicio_map{background-image: url(images/MAP/mapa_inicio/kanto_inicio.png);}
-#chuubu_inicio_map{background-image: url(images/MAP/mapa_inicio/chuubu_inicio.png);}
-#kansai_inicio_map{background-image: url(images/MAP/mapa_inicio/kansai_inicio.png);}
-#chuugoku_inicio_map{background-image: url(images/MAP/mapa_inicio/chuugoku_inicio.png);}
-#shikoku_inicio_map{background-image: url(images/MAP/mapa_inicio/shikoku_inicio.png);}
-#kyuushuu_inicio_map{background-image: url(images/MAP/mapa_inicio/kyuushuu_inicio.png);}
-#okinawa_inicio_map{background-image: url(images/MAP/mapa_inicio/okinawa_inicio.png);}
-
-
-
 .inicio_item_jpn_infos{
 	margin: 50px;
 	width: calc(60% - 100px);
@@ -339,8 +325,7 @@ body{
 .inicio_infos_direccion{
 	position: relative;
 	width: 100%;
-	height: 20%;
-	border-bottom: 2px solid #313131;
+	height: 14%;
 	font-size: 50px;
 	transform-style: preserve-3d;
 	transform: translateZ(-50px);
@@ -350,12 +335,11 @@ body{
 	position: absolute;
 	display: block;
 	width: 100%;
-	height: 70px;
+	background-color: #313131;
+	color: #eeeeee;
+	padding: 0 10px 10px 10px;
 	text-align: center;
 	border-radius: 10px;
-	/* box-shadow: 0 0 4px 2px #606060; */
-	/* background-color: rgba(0, 0, 0, .3); */
-	/* color: #eeeeee; */
 }
 
 .inicio_infos_direccion_p:nth-child(1){
@@ -378,7 +362,8 @@ body{
 .inicio_regiones_direccion{
 	list-style: none;
 	width: 100%;
-	margin-top: 50px;
+	flex-grow: 1;
+	padding-top: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -386,15 +371,13 @@ body{
 }
 .items_inicio_direccion{
 	font-size: 20px;
-	height: 20px;
-	width: 160px;
+	min-width: 150px;
 	padding: 10px;
 	margin: 10px;
 	border-radius: 30px;
 	text-align: center;
 	background-color: #313131;
 	color: #eeeeee;
-	/* box-shadow: 0 0 14px 0px #202020; */
 	transition: .4s;
 }
 .items_inicio_direccion:hover{
@@ -402,22 +385,6 @@ body{
 	color: #313131;
 	transition: .4s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
