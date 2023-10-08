@@ -341,7 +341,6 @@ body{
 	text-align: center;
 	border-radius: 10px;
 }
-
 .inicio_infos_direccion_p:nth-child(1){
 	padding-top: 10px;
 	transform: translateZ(50px);
@@ -353,12 +352,11 @@ body{
 	animation: animation_3 6s ease-in-out infinite;
 }
 .inicio_infos_direccion_p:nth-child(3){
+	background-color: red;
+	padding: 0 10px;
 	transform: rotateX(90deg) translateZ(50px);
 	animation: animation_2 6s ease-in-out infinite;
 }
-
-
-
 .inicio_regiones_direccion{
 	list-style: none;
 	width: 100%;
@@ -1054,7 +1052,7 @@ body{
 	flex-wrap: wrap;
 	margin: 0 auto 0 auto;
 	width: 86%;
-	justify-content: flex-start;
+	justify-content: space-evenly;
 	border-top: 2px solid #fff;
 	padding-left: 20px;
 	padding-right: 60px;
